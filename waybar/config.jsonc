@@ -32,19 +32,23 @@
     
     "hyprland/workspaces": {
         "active-only": false,
-        "disable-scroll": true,
+        "on-scroll-up": "hyprctl dispatch workspace r-1",
+        "on-scroll-down": "hyprctl dispatch workspace r+1",
         "all-outputs": true,
         "warp-on-scroll": false,
-        "format": "{name}: {icon}",
+        "format": "{icon}",
         "format-icons": {
             "1": "",
-            "2": "",
-            "3": "",
+            "2": "",
+            "3": " ",
             "4": "",
-            "5": "",
+            "5": "",
             "urgent": "",
             "focused": "",
             "default": ""
+         }, 
+         "persistent-workspaces": {
+            "*": 5
          }
     },
     "mpd": {
