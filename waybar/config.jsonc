@@ -90,9 +90,10 @@
         "spacing": 10
     },
     "clock": {
-        "timezone": "Europe/Berlin",
+        "format": "{:%H:%M:%S}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%Y-%m-%d}",
+        "interval": 1
     },
     "cpu": {
         "format": "{usage}% ",
