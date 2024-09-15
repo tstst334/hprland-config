@@ -7,3 +7,5 @@
 !waybar/**
 !wlogout/
 !wlogout/**
+!wal/templates/
+!wal/templates/**
