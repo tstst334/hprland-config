@@ -1,19 +1,16 @@
 // -*- mode: jsonc -*-
 {
     "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "position": "top", // Waybar position (top|bottom|left|right)
     "height": 30, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces",
-        "sway/mode",
-        "sway/scratchpad",
-        "custom/media"
+        "hyprland/workspaces"
     ],
     "modules-center": [
-        "sway/window"
+        "custom/logo"
     ],
     "modules-right": [
         "idle_inhibitor",
@@ -93,6 +90,7 @@
         "format": "{:%H:%M:%S}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}",
+        "timezone": "Europe/Berlin", 
         "interval": 1
     },
     "cpu": {
@@ -172,21 +170,14 @@
         },
         "on-click": "pavucontrol"
     },
-    "custom/media": {
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜"
-        },
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-    },
     "custom/power": {
         "format" : "⏻ ",
 		"tooltip": false,
 		"on-click": "wlogout"
+    },
+    "custom/logo":{
+        "format": "    ",
+        "tooltip": false,
+        "on-click": "wlogout"
     }
 }

@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-    background-color: rgba(100, 114, 125, 0.5);
+    background-color: rgba(126, 216, 24, 0.5);
     border-bottom: 3px solid rgba(100, 114, 125, 0.5);
     color: #ffffff;
     transition-property: background-color;
@@ -220,6 +220,13 @@ label:focus {
     color: #2a5c45;
     min-width: 100px;
 }
+#custom-logo {
+    background-image: url('images/arch-os.svg');
+    font-size: 25;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; 
+  }
 
 #custom-media.custom-spotify {
     background-color: #66cc99;
