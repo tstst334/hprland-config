@@ -11,5 +11,8 @@ if [ -d "$directory" ]; then
     hyprctl hyprpaper preload $random_background
     hyprctl hyprpaper wallpaper "$monitor, $random_background"
     wal -ni $random_background --saturate 1.0
+    sleep 1
+    /home/$USER/.config/hypr/scripts/launch.sh # relaunches waybar with new design
+
 
 fi
