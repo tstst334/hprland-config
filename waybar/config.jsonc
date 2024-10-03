@@ -7,13 +7,13 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "hyprland/language"
     ],
     "modules-center": [
         "custom/logo"
     ],
     "modules-right": [
-        "idle_inhibitor",
         "pulseaudio",
         "network",
         "cpu",
@@ -22,7 +22,8 @@
         "backlight",
         "battery",
         "clock",
-        "tray"
+        "tray",
+        "idle_inhibitor"
     ],
     // Modules configuration
     
@@ -75,11 +76,8 @@
         "tooltip-format-disconnected": "MPD (disconnected)"
     },
     "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
+        "format": "  ",
+        "tooltip": true
     },
     "tray": {
         // "icon-size": 21,
@@ -168,6 +166,12 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
+    },
+    "hyprland/language": {
+        "format": "{}",
+        "format-de": "DE",
+        "format-no": "NO",
+        "keyboard-name": "at-translated-set-2-keyboard"
     },
  
     "custom/logo":{

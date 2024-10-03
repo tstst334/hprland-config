@@ -244,7 +244,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: #297fb9;
 }
 
 #tray > .passive {
@@ -257,13 +257,22 @@ label:focus {
 }
 
 #idle_inhibitor {
-    background-color: #2d3436;
+    background-image: url('images/cup-of-coffee-cold.svg');
+    font-size: 20;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; 
 }
 
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
+    background-image: url('images/cup-of-coffee-hot.svg');
+    font-size: 20;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; 
 }
+
+
 
 #mpd {
     background-color: #66cc99;
@@ -283,11 +292,8 @@ label:focus {
 }
 
 #language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
+    background: transparent;
+    color: @color5;
 }
 
 #keyboard-state {
