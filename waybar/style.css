@@ -262,6 +262,7 @@ label:focus {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; 
+    background-color: @color7; 
 }
 
 #idle_inhibitor.activated {
@@ -270,6 +271,7 @@ label:focus {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; 
+    background-color: @color7;
 }
 
 

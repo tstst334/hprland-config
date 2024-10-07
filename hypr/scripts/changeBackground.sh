@@ -7,9 +7,7 @@ if [ -d "$directory" ]; then
     random_background=$(ls $directory/*.jpg | shuf -n 1)
    
 
-    hyprctl hyprpaper unload all
-    hyprctl hyprpaper preload $random_background
-    hyprctl hyprpaper wallpaper "$monitor, $random_background"
+    swww img $random_background
     wal -ni $random_background --saturate 1.0
     sleep 1
     /home/$USER/.config/hypr/scripts/launch.sh # relaunches waybar with new design
